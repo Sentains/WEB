@@ -3,19 +3,19 @@
 {% block content %}
     <h2>Список профессий</h2>
     {% if type_list == "ul" %}
-        <ul class="profession-list">
+        <ul>
             {% for profession in professions %}
                 <li>{{ profession }}</li>
             {% endfor %}
         </ul>
     {% elif type_list == "ol" %}
-        <ol class="profession-list">
+        <ol>
             {% for profession in professions %}
                 <li>{{ profession }}</li>
             {% endfor %}
         </ol>
     {% else %}
-        <div class="alert alert-danger" role="alert">
+        <div>
             Неверный параметр
         </div>
     {% endif %}
